@@ -1,11 +1,11 @@
 :root {
-	--dark1: #3c4344; /* outline color */
-	--dark2: white; /* image background color */
-	--main1: #003399; /* mic box/filter color */
-	--main2: #001e5a; /* mic list background color */
-	--main3: #c98c5b; /* button color */
-	--light1: rgb(199, 199, 199); /* header color */
-	--light2: rgb(223, 223, 223); /* page background color */
+	--dark1: #3c4344; /* unused */
+	--dark2: white; /* unused */
+	--main1: #003399; /* outline color */
+	--main2: #001e5a; /* timeline color */
+	--main3: #c98c5b; /* unused */
+	--light1: rgb(199, 199, 199); /* button backgrounds */
+	--light2: rgb(223, 223, 223); /* container backgrounds */
 	--light3: rgb(238, 238, 238); /* background */
 }
 .lexend-400 {
@@ -50,7 +50,7 @@ body {
 }
 #header {
 	margin-top: 5%;
-	font-size: 3.5vmin;
+	font-size: 5vmin;
 	color: black;
 	font-weight: 650;
 	width: 100%;
@@ -59,10 +59,12 @@ body {
 }
 #info {
 	width: 100%;
+	font-size: 2.5vmin;
 	margin-left: calc(4% + 1.5vmin);
 	background-color: var(--light2);
 	border: #003399 solid 0.5vmin;
 	border-radius: 0.5vmin;
+	text-align: center;
 }
 #p1 {
 	margin-bottom: 2em;
@@ -149,7 +151,7 @@ img {
 	margin-left: calc(4% + 1.5vmin);
 	background-color: var(--light2);
 	border: #003399 solid 0.5vmin;
-	border-radius: 0.5vmin;
+	border-radius: 1vmin;
 }
 #Highlights {
 	margin-top: 2.5%;
@@ -230,11 +232,17 @@ img {
 	gap: 3%;
 }
 #scrollarea > a {
-	padding-right: 2.5%;
+	padding-right: 4%;
+	text-decoration: none;
+	color: var(--main1);
+	font-size: 3vmin;
+}
+#p1 > a {
+	text-decoration: none;
+	color: var(--main1);
 }
 a:visited {
-	text-decoration: none;
-	decoration: none;
+
 }
 @keyframes forward {
 	from {
