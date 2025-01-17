@@ -237,12 +237,13 @@ img {
 	color: var(--main1);
 	font-size: 3vmin;
 }
-#p1 > a {
+a {
 	text-decoration: none;
 	color: var(--main1);
 }
-a:visited {
-
+.link {
+	text-decoration: none;
+	color: black;
 }
 @keyframes forward {
 	from {
