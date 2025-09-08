@@ -19,12 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (start <= end) return;
 		setTimeout(move, 1, element, actualstart, start - (actualstart - end) / time, end, time, i);
 	}
-	document.querySelectorAll(".headerelement").forEach((e) => { //create links on the right side
-		let newelement = document.createElement("a");
-		newelement.href = "#" + e.innerHTML; //makes the link go to the subsection
-		newelement.innerHTML = e.innerHTML;
-		document.getElementById("scrollarea").appendChild(newelement);
-	});
 	let leeway = 100; //room for images to show earlier / hide later
 	function tick() { //runs every frame
 		document.querySelectorAll(".subpage").forEach((e, i) => {
