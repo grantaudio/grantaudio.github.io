@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 	let elementon = 1; //tracks the timeline entry
 	setInterval(() => {
-		let position = document.getElementById("timeline" + (elementon + 1).toString()).offsetLeft; //calculate where to scroll
-		document.getElementById("highlight").scrollTo({ left: position, behavior: "smooth" }); //scrolling
-		elementon++; //go to the next one
-		if (elementon >= document.querySelectorAll(".timelineentry").length) elementon = 0; //loop around
+		//let position = document.getElementById("timeline" + (elementon + 1).toString()).offsetLeft; //calculate where to scroll
+		//document.getElementById("highlight").scrollTo({ left: position, behavior: "smooth" }); //scrolling
+		//elementon++; //go to the next one
+		//if (elementon >= document.querySelectorAll(".timelineentry").length) elementon = 0; //loop around
 	}, 10000);
 	let containerson = new Array(document.querySelectorAll(".subpage").length).fill(false); //track which images are opened
 	function moveback(element, actualstart, start, end, time, i) { //move clip back to hide
